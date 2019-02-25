@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="holderPane" prefHeight="510.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UserProfileController">
+   <children>
+      <Separator layoutX="444.0" layoutY="87.0" orientation="VERTICAL" prefHeight="479.0" prefWidth="16.0" />
+      <VBox alignment="TOP_CENTER" layoutX="61.0" layoutY="9.0" prefHeight="497.0" prefWidth="336.0">
+         <children>
+            <HBox prefHeight="10.0" prefWidth="376.0" />
+            <HBox prefHeight="31.0" prefWidth="376.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/desactivate.png" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="18.0" prefWidth="376.0" />
+            <Label text="Desactivate my account" textFill="#ebd6e0">
+               <font>
+                  <Font name="Century Gothic Italic" size="22.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="23.0" prefWidth="376.0" />
+            <JFXButton fx:id="desactivate" onAction="#desactivateprofile" prefHeight="45.0" prefWidth="376.0" style="-fx-background-radius: 8px; -fx-background-color: linear-gradient(to bottom, green,white);" text="Desactivate now!" textFill="#137508">
+               <font>
+                  <Font name="Century Gothic Italic" size="26.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="519.0" layoutY="14.0" prefHeight="454.0" prefWidth="293.0">
+         <children>
+            <ImageView fx:id="imgview" fitHeight="161.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton fx:id="image" onAction="#getImage" prefHeight="59.0" prefWidth="376.0" style="-fx-background-radius: 8PX; -fx-background-color: linear-gradient(to bottom, green,white);" text="Upload" textFill="#137508">
+               <font>
+                  <Font name="Century Gothic Italic" size="25.0" />
+               </font>
+            </JFXButton>
+            <HBox prefHeight="63.0" prefWidth="376.0" />
+            <Separator prefWidth="200.0" />
+            <JFXTextField fx:id="firstname" alignment="CENTER" promptText="First Name" />
+            <Separator prefWidth="200.0" />
+            <JFXTextField fx:id="lastname" alignment="CENTER" promptText="Last Name" />
+            <Separator prefWidth="200.0" />
+            <JFXTextField fx:id="email" alignment="CENTER" promptText="Email" />
+            <Separator prefWidth="200.0" />
+            <JFXTextField fx:id="username" alignment="CENTER" promptText="Username" />
+            <Separator prefWidth="200.0" />
+            <JFXPasswordField fx:id="password" alignment="CENTER" promptText="Password" />
+            <Separator prefHeight="3.0" prefWidth="336.0" />
+            <Separator prefWidth="200.0" />
+            <JFXTextField fx:id="phonenumber" alignment="CENTER" promptText="Phone number" />
+            <Separator prefWidth="200.0" />
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="39.0" prefWidth="376.0" />
+            <JFXButton fx:id="updateBtn1" onAction="#update" prefHeight="59.0" prefWidth="376.0" style="-fx-background-radius: 8PX; -fx-background-color: linear-gradient(to bottom, green,white);" text="Update my information" textFill="#137508">
+               <font>
+                  <Font name="Century Gothic Italic" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

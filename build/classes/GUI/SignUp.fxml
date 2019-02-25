@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SignUpController">
+   <children>
+      <ImageView fitHeight="772.0" fitWidth="1263.0" layoutX="-49.0" layoutY="-22.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/back.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="44.0" layoutY="111.0" prefHeight="577.0" prefWidth="420.0" style="-fx-border-color: grey;">
+         <children>
+            <JFXComboBox fx:id="role" focusColor="#b7de90" layoutX="18.0" layoutY="357.0" onMouseClicked="#test" onMouseEntered="#testt" prefHeight="31.0" prefWidth="384.0" promptText="Role" unFocusColor="#b7de90" />
+            <JFXTextField fx:id="firstname" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="13.0" layoutY="57.0" prefHeight="46.0" prefWidth="384.0" promptText="First name" unFocusColor="#b7e090">
+               <font>
+                  <Font name="Century Gothic Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="lastname" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="13.0" layoutY="121.0" prefHeight="46.0" prefWidth="384.0" promptText="Last name" unFocusColor="#b7e090">
+               <font>
+                  <Font name="Century Gothic Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="email" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="13.0" layoutY="194.0" onKeyReleased="#emailVerif" prefHeight="46.0" prefWidth="384.0" promptText="Email" unFocusColor="#b7e090">
+               <font>
+                  <Font name="Century Gothic Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="username" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="13.0" layoutY="269.0" onKeyReleased="#verifusername" prefHeight="46.0" prefWidth="384.0" promptText="Username" unFocusColor="#b7e090">
+               <font>
+                  <Font name="Century Gothic Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="password" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="426.0" prefHeight="46.0" prefWidth="384.0" promptText="Password" unFocusColor="#b7e090">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="verifiermail" editable="false" layoutX="18.0" layoutY="209.0" prefHeight="26.0" prefWidth="384.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchore1" layoutX="535.0" layoutY="109.0" prefHeight="584.0" prefWidth="420.0" style="-fx-border-color: grey;">
+         <children>
+            <ImageView fx:id="address" fitHeight="55.0" fitWidth="65.0" layoutX="229.0" layoutY="214.0" onDragDetected="#map" onMouseClicked="#map" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/location-icon.png" />
+               </image>
+            </ImageView>
+            <Text fill="#4a4848" layoutX="62.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="phonenumber" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="18.0" layoutY="130.0" prefHeight="46.0" prefWidth="365.0" promptText="Phone Number" unFocusColor="#b7e090a3">
+               <font>
+                  <Font name="Century Gothic Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="signup" layoutX="102.0" layoutY="494.0" onAction="#SignUp" prefHeight="31.0" prefWidth="217.0" text="Sign Up" textFill="#b7e090">
+               <font>
+                  <Font name="Century Gothic Bold" size="32.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="shopName" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="29.0" layoutY="387.0" prefHeight="46.0" prefWidth="343.0" promptText="Shop Name" unFocusColor="#b7e090">
+               <font>
+                  <Font name="Century Gothic Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="association" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="18.0" layoutY="401.0" prefHeight="46.0" prefWidth="343.0" promptText="Association Name" unFocusColor="#b7e090">
+               <font>
+                  <Font name="Century Gothic Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="69.0" fitWidth="70.0" layoutX="68.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Female.png" />
+               </image>
+            </ImageView>
+            <JFXRadioButton fx:id="female" layoutX="143.0" layoutY="53.0" text=" " textFill="#b7e090" />
+            <ImageView fitHeight="69.0" fitWidth="70.0" layoutX="222.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Male-icon.png" />
+               </image>
+            </ImageView>
+            <JFXRadioButton fx:id="male" layoutX="314.0" layoutY="53.0" text=" " />
+            <Text fx:id="attestaionTxt" fill="#4a4848" layoutX="40.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Certificate">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="uploadBtn" layoutX="201.0" layoutY="318.0" onAction="#upload" prefHeight="46.0" prefWidth="151.0" text=" Upload " textFill="#b7e090">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Text fill="#b7e090" layoutX="419.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+         <font>
+            <Font name="Century Gothic Bold Italic" size="71.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="blurView" layoutY="1.0" opacity="0.47" prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: black;" visible="false" />
+      <AnchorPane fx:id="googleMap" layoutX="183.0" layoutY="127.0" prefHeight="535.0" prefWidth="618.0" visible="false">
+         <children>
+            <GoogleMapView fx:id="mapview" prefHeight="546.0" prefWidth="634.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="70.0" layoutY="14.0" onAction="#retour" prefHeight="46.0" prefWidth="267.0" text=" Back" textFill="#b7e090">
+         <font>
+            <Font name="Century Gothic Bold" size="32.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

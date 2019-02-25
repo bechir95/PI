@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="712.0" maxWidth="1144.0" prefHeight="656.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.HomeController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1050.0" layoutX="-7.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/52631592_961667804223190_6150793785241501696_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="223.0" fitWidth="313.0" layoutX="-51.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/52819970_2290258581255344_3298179904280985600_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="850.0" fitWidth="850.0" layoutX="179.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/52513896_386704048785988_7081396375174250496_n.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="4.0" layoutY="166.0" mnemonicParsing="false" onAction="#home" prefHeight="84.0" prefWidth="153.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="-19.0" layoutY="464.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="222.0" style="-fx-background-color: transparent;" text="Reclamation" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="event" layoutX="-23.0" layoutY="395.0" mnemonicParsing="false" onAction="#goEvent" prefHeight="112.0" prefWidth="208.0" style="-fx-background-color: transparent;" text="Promotion" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="-30.0" layoutY="243.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="222.0" style="-fx-background-color: transparent;" text="Service" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="-6.0" layoutY="324.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="173.0" style="-fx-background-color: transparent;" text="Magasin" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="543.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="153.0" style="-fx-background-color: transparent;" text="FAQ" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <FontAwesomeIconView />
+      <AnchorPane fx:id="holderPane" layoutX="181.0" layoutY="125.0" prefHeight="530.0" prefWidth="860.0" />
+      <ImageView fitHeight="57.0" fitWidth="97.0" layoutX="896.0" layoutY="5.0" onMouseClicked="#profile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/profile1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="id_logout" fitHeight="57.0" fitWidth="57.0" layoutX="971.0" layoutY="5.0" onDragDetected="#deconnecter" onMouseClicked="#deconnecter" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/logout1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
